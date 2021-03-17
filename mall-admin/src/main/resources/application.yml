@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+mybatis:
+  type-aliases-package: com.chunhai.mall.model
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath:mapper/*.xml
